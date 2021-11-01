@@ -1,0 +1,267 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    background: linear-gradient(to right, #F1C321 0%, #eb466b 100%);
+    font-size: 12px;
+  }
+  
+  body, button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  
+  .background {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .container {
+    flex: 100 2 700px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    z-index: 0;
+  }
+
+  .logo {
+    z-index: 0;
+    margin-top: -4%;
+    margin-left: -14%;
+    margin-bottom: 15px;
+}
+  
+  .screen {
+    position: relative;
+    background: #8E8E93;
+    border-radius: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #bbbbbb;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .screen-header-left {
+    margin-right: auto;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .screen-header-button.close {
+    background: #ed1c6f;
+  }
+  
+  .screen-header-button.maximize {
+    background: #e8e925;
+  }
+  
+  .screen-header-button.minimize {
+    background: #74c54f;
+  }
+  
+  .screen-header-right {
+    display: flex;
+  }
+  
+  .screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #eeeeee;
+  }
+  .screen-header-title {
+   color: #eeeeee;
+   padding-left: 10px;
+  }
+  
+  .customScreenShow{
+    width: 100%;
+  }
+
+  .flash_message{
+    margin-left: 10px;
+    color: goldenrod;
+  }
+
+
+  /* LITTLE BAR ANDER THE TITLE*/
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #F1C321;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-top: 45px;
+    margin-bottom: 0;
+    text-align: right;
+  }
+
+  .filterBt{
+    margin-top: -6%;
+    margin-left: 28%;
+  }
+
+  .cleanFilter {
+    margin-top: -6%;
+    margin-left: 1%;
+  }
+
+  .btnUpdateBack{
+    margin-top: -6%;
+    margin-left: 10%;
+  }
+
+  .btnCreateBack{
+    margin-top: -6%;
+    margin-left: 8%;
+  }
+  
+  .btnBackShow{
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  
+  @media (min-width: 500px) and (max-width: 600px) 
+  {
+    .filterBt{
+      margin-top: 6%;
+      margin-left: 28%;
+    }
+  
+    .cleanFilter {
+      margin-top: 6%;
+      margin-left: 1%;
+    }
+    .btns-filter{
+      margin-top: 5%;
+    }
+
+    .btnUpdateBack{
+      margin-top: -14%;
+      margin-left: 25%;
+    }
+
+    .logo {
+      z-index: 5;
+      margin-top: -4%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+      padding-left: 18%;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 800px) 
+  {
+    .filterBt{
+      margin-top: 6%;
+      margin-left: 28%;
+    }
+  
+    .cleanFilter {
+      margin-top: 6%;
+      margin-left: 1%;
+    }
+    .btns-filter{
+      margin-top: 5%;
+    }
+
+    .btnUpdateBack{
+      margin-top: -14%;
+      margin-left: 25%;
+    }
+
+    .logo {
+      z-index: 5;
+      margin-top: -4%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+      padding-left: 25%;
+    }
+  
+  }
+  @media (min-width: 800px) and (max-width: 1600px) 
+  {
+    .filterBt{
+      margin-top: 6%;
+      margin-left: 28%;
+    }
+  
+    .cleanFilter {
+      margin-top: 6%;
+      margin-left: 1%;
+    }
+    .btns-filter{
+      margin-top: 5%;
+    }
+
+    .btnUpdateBack{
+      margin-top: -14%;
+      margin-left: 25%;
+    }
+
+    .logo {
+      z-index: 5;
+      margin-top: -4%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+      padding-left: 8%;
+    }
+  }
